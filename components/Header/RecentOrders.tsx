@@ -13,7 +13,7 @@ const RecentOrders = (props: Props) => {
 					return (
 						<li
 							key={order.id}
-							className='list-none  cursor-pointer flex rounded-lg py-2 my-2'
+							className='list-none cursor-pointer flex rounded-lg p-2 my-2 bg-slate-200 dark:bg-slate-600'
 						>
 							<div className='bg-slate-50 dark:bg-slate-700 hover:bg-slate-50/50 p-2 rounded-sm'>
 								<FaShoppingBag className='text-slate-300' />
