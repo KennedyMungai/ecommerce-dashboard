@@ -1,5 +1,7 @@
 import React from 'react'
 import TopCards from '../SideBar/TopCards/TopCards'
+import BarChart from '../Charts/BarChart'
+import RecentOrders from './RecentOrders'
 
 type Props = {}
 
@@ -11,6 +13,10 @@ const Header = (props: Props) => {
 				<h2 className='font-semibold'>Welcome Back, Motherfucker</h2>
 			</div>
 			<TopCards />
+            <div className="flex p-5">
+                <BarChart />
+                <RecentOrders />
+            </div>
 		</div>
 	)
 }
