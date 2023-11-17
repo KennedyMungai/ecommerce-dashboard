@@ -14,7 +14,7 @@ const SideBar = (props: Props) => {
 						<RxSketchLogo size={30} />
 					</div>
 				</Link>
-                <Separator className='mt-5' />
+                <Separator className='my-5' />
 			</div>
 			<div className=''></div>
 		</div>
