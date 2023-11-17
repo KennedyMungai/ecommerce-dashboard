@@ -22,22 +22,22 @@ const TopCards = (props: Props) => {
 			<Card className='flex justify-between w-full p-4'>
 				<CardContent className='flex justify-between w-full'>
 					<div className='flex flex-col w-full'>
-						<p className='text-2xl font-bold'>$7,846</p>
+						<p className='text-2xl font-bold'>$13,846,482</p>
 						<p className='text-slate-400 dark:text-slate-600'>
-							Daily Revenue
+							YDT Revenue
 						</p>
 					</div>
 					<p className='bg-green-400 flex items-center justify-center rounded-lg p-2'>
-						+26%
+						+5%
 					</p>
 				</CardContent>
 			</Card>
 			<Card className='flex justify-between w-full p-4'>
 				<CardContent className='flex justify-between w-full'>
 					<div className='flex flex-col w-full'>
-						<p className='text-2xl font-bold'>$7,846</p>
+						<p className='text-2xl font-bold'>15,896</p>
 						<p className='text-slate-400 dark:text-slate-600'>
-							Daily Revenue
+							Customers
 						</p>
 					</div>
 					<p className='bg-green-400 flex items-center justify-center rounded-lg p-2'>
