@@ -4,7 +4,7 @@ type Props = {}
 
 const RecentOrders = (props: Props) => {
   return (
-    <div className='w-full'>RecentOrders</div>
+    <div className='w-[30vw] bg-orange-500'>RecentOrders</div>
   )
 }
 
