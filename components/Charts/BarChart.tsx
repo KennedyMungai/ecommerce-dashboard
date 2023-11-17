@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from 'react'
 import {Bar} from 'react-chartjs-2'
 import {
@@ -23,7 +24,11 @@ ChartJS.register(
 )
 
 const BarChart = (props: Props) => {
-	return <div className='lg:w-[60vw] w-full bg-rose-500'>BarChart</div>
+	return <div className='lg:w-[60vw] w-full'>
+        <div className="">
+            <Bar />
+        </div>
+    </div>
 }
 
 export default BarChart
