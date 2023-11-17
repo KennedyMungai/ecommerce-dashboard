@@ -13,7 +13,7 @@ const Header = (props: Props) => {
 				<h2 className='font-semibold'>Welcome Back, Motherfucker</h2>
 			</div>
 			<TopCards />
-            <div className="flex p-5 gap-5">
+            <div className="flex flex-col lg:flex-row p-5 gap-5">
                 <BarChart />
                 <RecentOrders />
             </div>
