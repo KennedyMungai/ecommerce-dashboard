@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { RxSketchLogo } from 'react-icons/rx'
+import { Separator } from '../ui/separator'
 
 type Props = {}
 
@@ -13,6 +14,7 @@ const SideBar = (props: Props) => {
 						<RxSketchLogo size={30} />
 					</div>
 				</Link>
+                <Separator className='mt-5' />
 			</div>
 			<div className=''></div>
 		</div>
