@@ -9,7 +9,7 @@ const SideBar = (props: Props) => {
 		<div className='w-[6vw] h-screen bg-slate-50 dark:bg-slate-900 p-4 border-r-[1px] flex flex-col justify-between'>
 			<div className='flex flex-col items-center'>
 				<Link href={'/'}>
-					<div className=''>
+					<div className='bg-purple-800 text-white p-3 rounded-lg inline-block'>
 						<RxSketchLogo size={30} />
 					</div>
 				</Link>
