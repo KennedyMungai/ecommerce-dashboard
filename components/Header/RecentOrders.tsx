@@ -4,7 +4,7 @@ type Props = {}
 
 const RecentOrders = (props: Props) => {
   return (
-    <div>RecentOrders</div>
+    <div className='w-full'>RecentOrders</div>
   )
 }
 
