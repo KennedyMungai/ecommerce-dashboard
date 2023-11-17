@@ -4,7 +4,7 @@ type Props = {}
 
 const TopCards = (props: Props) => {
   return (
-    <div>TopCards</div>
+    <div className='px-5'>TopCards</div>
   )
 }
 
