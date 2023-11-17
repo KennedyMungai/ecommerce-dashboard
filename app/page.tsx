@@ -3,7 +3,8 @@ import SideBar from '@/components/SideBar/SideBar'
 
 export default function Home() {
   return (
-    <main className='flex flex-row ml-[5rem] w-full'>
+    <main className='flex bg-slate-100 dark:bg-slate-800 min-h-screen'>
+      <SideBar />
       <Header />
     </main>
   )
