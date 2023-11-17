@@ -6,16 +6,16 @@ type Props = {}
 
 const RecentOrders = (props: Props) => {
 	return (
-		<div className='lg:w-[28vw] w-full bg-white dark:bg-slate-900 p-5 rounded-lg shadow-sm overflow-scroll'>
-			<h1 className='text-center'>Recent Orders</h1>
+		<div className='lg:w-[28vw] w-full bg-white dark:bg-slate-900 p-5 rounded-lg shadow-sm overflow-scroll h-[60vh] scrollbar-hide'>
+			<h1 className='text-center uppercase font-semibold'>Recent Orders</h1>
 			<ul>
 				{data.map((order) => {
 					return (
 						<li
 							key={order.id}
-							className='list-none bg-slate-300 dark:bg-slate-600 cursor-pointer flex rounded-lg'
+							className='list-none  cursor-pointer flex rounded-lg py-2 my-2'
 						>
-							<div className='bg-slate-50 hover:bg-slate-50/50'>
+							<div className='bg-slate-50 dark:bg-slate-700 hover:bg-slate-50/50 p-2 rounded-sm'>
 								<FaShoppingBag className='text-slate-300' />
 							</div>
 						</li>
