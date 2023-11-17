@@ -17,7 +17,7 @@ ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const BarChart = (props: Props) => {
 	const [chartData, setChartData] = useState<IChartData | null>()
-	const [chartOptions, setChartOptions] = useState<IChartOptions | null>()
+	// const [chartOptions, setChartOptions] = useState<IChartOptions | null>()
 
 	useEffect(() => {
 		setChartData({
@@ -32,24 +32,23 @@ const BarChart = (props: Props) => {
 			]
 		})
 
-        setChartOptions({
+	}, [])
+
+        const options = {
+            responsive: true,
             plugins: {
                 legend: {
-                    position: 'top',
+                    position: 'top' as const 
                 },
                 title: {
                     display: true,
-                    text: 'Daily Revenue'
+                    text: 'Sales'
                 }
-            },
-            maintainAspectRatio: false,
-            responsive: true
-        })
-	}, [])
-
+            }
+        }
 	return (
 		<div className='w-full lg:w-[60vw] border rounded-lg bg-white h-full dark:bg-slate-900'>
-			<Bar data={chartData!} options={chartOptions!} />
+			<Bar data={chartData!} options={options} />
 		</div>
 	)
 }
