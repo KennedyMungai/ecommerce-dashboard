@@ -27,7 +27,7 @@ const BarChart = (props: Props) => {
     const [chartData, setChartData] = useState({datasets: []})
     const [chartOptions, setChartOptions] = useState({})
 
-	return <div className='w-full lg:w-[60vw] border rounded-lg bg-white h-full'>
+	return <div className='w-full lg:w-[60vw] border rounded-lg bg-white h-full dark:bg-slate-900'>
             <Bar data={chartData} options={chartOptions} />
     </div>
 }
