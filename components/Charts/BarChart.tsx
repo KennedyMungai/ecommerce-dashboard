@@ -1,27 +1,22 @@
 'use client'
-import React, { useEffect, useState } from 'react'
-import { Bar } from 'react-chartjs-2'
 import {
-	Chart as ChartJS,
-	CategoryScale,
-	LinearScale,
-	BarElement,
-	Title,
-	Tooltip,
-	Legend
+    BarElement,
+    CategoryScale,
+    Chart as ChartJS,
+    Legend,
+    LinearScale,
+    Title,
+    Tooltip
 } from 'chart.js'
+import { Bar } from 'react-chartjs-2'
 
 type Props = {}
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const BarChart = (props: Props) => {
-	const [chartData, setChartData] = useState<IChartData | null>()
-	// const [chartOptions, setChartOptions] = useState<IChartOptions | null>()
-
-	useEffect(() => {
-		setChartData({
-			labels: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'],
+    const chartData = {
+        labels: ['Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat', 'Sun'],
 			datasets: [
 				{
 					label: 'Sales $',
@@ -30,22 +25,20 @@ const BarChart = (props: Props) => {
 					backgroundColor: 'rgb(53, 162, 235, 0.4'
 				}
 			]
-		})
+    }
 
-	}, [])
-
-        const options = {
-            responsive: true,
-            plugins: {
-                legend: {
-                    position: 'top' as const 
-                },
-                title: {
-                    display: true,
-                    text: 'Sales'
-                }
-            }
-        }
+	const options = {
+		responsive: true,
+		plugins: {
+			legend: {
+				position: 'top' as const
+			}
+		},
+		title: {
+			display: true,
+			text: 'Sales'
+		}
+	}
 	return (
 		<div className='w-full lg:w-[60vw] border rounded-lg bg-white h-full dark:bg-slate-900'>
 			<Bar data={chartData!} options={options} />
