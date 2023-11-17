@@ -14,7 +14,9 @@ const TopCards = (props: Props) => {
 							Daily Revenue
 						</p>
 					</div>
-                    <p className="bg-green-400 flex items-center justify-center rounded-lg p-3">+18%</p>
+					<p className='bg-green-400 flex items-center justify-center rounded-lg p-3'>
+						+18%
+					</p>
 				</CardContent>
 			</Card>
 			<Card className='flex justify-between w-full p-4'>
@@ -25,7 +27,9 @@ const TopCards = (props: Props) => {
 							Daily Revenue
 						</p>
 					</div>
-                    <p className="bg-green-400 flex items-center justify-center rounded-lg p-2">+26%</p>
+					<p className='bg-green-400 flex items-center justify-center rounded-lg p-2'>
+						+26%
+					</p>
 				</CardContent>
 			</Card>
 			<Card className='flex justify-between w-full p-4'>
@@ -36,7 +40,9 @@ const TopCards = (props: Props) => {
 							Daily Revenue
 						</p>
 					</div>
-                    <p className="bg-green-400 flex items-center justify-center rounded-lg p-2">+12%</p>
+					<p className='bg-green-400 flex items-center justify-center rounded-lg p-2'>
+						+12%
+					</p>
 				</CardContent>
 			</Card>
 		</div>
