@@ -12,6 +12,15 @@ import {
 
 type Props = {}
 
+ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+    Title,
+    Tooltip,
+    Legend
+)
+
 const BarChart = (props: Props) => {
 	return <div className='lg:w-[60vw] w-full bg-rose-500'>BarChart</div>
 }
