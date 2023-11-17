@@ -4,6 +4,7 @@ import { RxSketchLogo, RxDashboard, RxPerson } from 'react-icons/rx'
 import {HiOutlineShoppingBag} from 'react-icons/hi'
 import {FiSettings} from 'react-icons/fi'
 import { Separator } from '../ui/separator'
+import ThemeToggle from './ThemeToggle'
 
 type Props = {}
 
@@ -48,7 +49,9 @@ const SideBar = (props: Props) => {
 					</Link>
 				</div>
 			</div>
-			<div className=''></div>
+			<div className=''>
+                <ThemeToggle />
+            </div>
 		</div>
 	)
 }
