@@ -2,6 +2,7 @@ import ThemeProvider from '@/providers/ThemeProvider'
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
 import './globals.css'
+import SideBar from '@/components/SideBar/SideBar'
 
 const open_sans = Open_Sans({ subsets: ['latin'] })
 
@@ -18,7 +19,10 @@ export default function RootLayout({
 	return (
 		<html lang='en'>
 			<body className={open_sans.className}>
-				<ThemeProvider>{children}</ThemeProvider>
+				<ThemeProvider>
+					<SideBar />
+					{children}
+				</ThemeProvider>
 			</body>
 		</html>
 	)
