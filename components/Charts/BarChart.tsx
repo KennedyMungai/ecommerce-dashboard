@@ -16,8 +16,8 @@ type Props = {}
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
 const BarChart = (props: Props) => {
-	const [chartData, setChartData] = useState({})
-	const [chartOptions, setChartOptions] = useState({})
+	const [chartData, setChartData] = useState<IChartData | null>()
+	const [chartOptions, setChartOptions] = useState<IChartOptions | null>()
 
 	useEffect(() => {
 		setChartData({
@@ -49,7 +49,7 @@ const BarChart = (props: Props) => {
 
 	return (
 		<div className='w-full lg:w-[60vw] border rounded-lg bg-white h-full dark:bg-slate-900'>
-			<Bar data={chartData} options={chartOptions} />
+			<Bar data={chartData!} options={chartOptions!} />
 		</div>
 	)
 }
