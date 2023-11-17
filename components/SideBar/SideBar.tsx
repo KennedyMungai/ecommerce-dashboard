@@ -10,7 +10,7 @@ type Props = {}
 
 const SideBar = (props: Props) => {
 	return (
-		<div className='w-[6vw] h-screen bg-slate-50 dark:bg-slate-900 p-4 border-r-[1px] flex flex-col justify-between'>
+		<div className='w-[6vw] h-screen bg-slate-50 dark:bg-slate-900 p-4 border-r-[1px] flex flex-col justify-between fixed'>
 			<div className=''>
 				<div className='flex flex-col items-center'>
 					<Link href={'/'}>
