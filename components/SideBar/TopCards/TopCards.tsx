@@ -5,20 +5,20 @@ type Props = {}
 
 const TopCards = (props: Props) => {
 	return (
-		<div className='px-5 grid lg:grid-cols-5 gap-4 p-4 w-full'>
-			<Card className='lg:col-span-2 col-span-1 flex justify-between w-full p-4'>
+		<div className='flex flex-col px-5 p-4 w-full lg:flex-row'>
+			<Card className='flex justify-between flex-grow-2 w-full p-4'>
 				<CardContent>
-                    
+
                 </CardContent>
 			</Card>
-			<Card className='lg:col-span-2 col-span-1 flex justify-between w-full p-4'>
+			<Card className='flex flex-grow-2 justify-between w-full p-4'>
 				<CardContent>
-                    
+
                 </CardContent>
 			</Card>
-			<Card className='flex justify-between w-full'>
+			<Card className='flex justify-between flex-grow-1 w-full p-4'>
 				<CardContent>
-                    
+
                 </CardContent>
 			</Card>
 		</div>
