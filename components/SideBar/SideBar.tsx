@@ -27,21 +27,21 @@ const SideBar = (props: Props) => {
 					</Link>
 				</div>
 				<div className='flex flex-col items-center'>
-					<Link href={'/'}>
+					<Link href={'/customers'}>
 						<div className='bg-slate-200 hover:bg-slate-200/50 cursor-pointer my-2 p-2 rounded-lg inline-block'>
 							<RxPerson size={20} />
 						</div>
 					</Link>
 				</div>
 				<div className='flex flex-col items-center'>
-					<Link href={'/'}>
+					<Link href={'/orders'}>
 						<div className='bg-slate-200 hover:bg-slate-200/50 cursor-pointer my-2 p-2 rounded-lg inline-block'>
 							<HiOutlineShoppingBag size={20} />
 						</div>
 					</Link>
 				</div>
 				<div className='flex flex-col items-center'>
-					<Link href={'/'}>
+					<Link href={'/settings'}>
 						<div className='bg-slate-200 hover:bg-slate-200/50 cursor-pointer my-2 p-2 rounded-lg inline-block'>
 							<FiSettings size={20} />
 						</div>
