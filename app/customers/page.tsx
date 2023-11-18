@@ -16,9 +16,9 @@ const CustomersPage = (props: Props) => {
 					<div className='flex justify-between'>
 						<span className='font-semibold'>Name</span>
 						<span className='font-semibold'>Email</span>
-						<span className='font-semibold'>Last Order</span>
-						<span className='font-semibold'>Method</span>
-						<span></span>
+						<span className='font-semibold hidden lg:display-flex'>Last Order</span>
+						<span className='font-semibold hidden lg:display-flex'>Method</span>
+						<span className='hidden lg:flex'></span>
 					</div>
 				</div>
 			</div>
