@@ -30,6 +30,7 @@ const CustomersPage = (props: Props) => {
 										</div>
 										<p className='pl-4 text-sm font-semibold'>{order.name.first} {order.name.last}</p>
 									</div>
+									<p className='text-sm font-semibold'>{order.name.first}@gmail.com</p>
 								</li>
 							)
 						})}
