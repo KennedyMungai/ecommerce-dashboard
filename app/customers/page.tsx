@@ -6,7 +6,7 @@ type Props = {}
 
 const CustomersPage = (props: Props) => {
 	return (
-		<div className='ml-[5rem] min-h-screen dark:bg-slate-800 p-5 bg-slate-100 text-slate-700 dark:text-slate-400'>
+		<div className='ml-[5rem] min-h-screen dark:bg-slate-900 p-5 bg-slate-200 text-slate-700 dark:text-slate-400'>
 			<div className='flex justify-between items-center'>
 				<h2 className='text-2xl uppercase font-semibold'>Customers</h2>
 				<h2 className='font-semibold'>Welcome Back, Motherfucker</h2>
@@ -31,6 +31,9 @@ const CustomersPage = (props: Props) => {
 										<p className='pl-4 text-sm font-semibold'>{order.name.first} {order.name.last}</p>
 									</div>
 									<p className='text-sm font-semibold'>{order.name.first}@gmail.com</p>
+									<p className='hidden lg:flex text-sm font-semibold'>{order.date}</p>
+									<p className='text-sm font-semibold hidden lg:flex'>{order.method}</p>
+									<p className='hidden lg:flex'><BsThreeDotsVertical /></p>
 								</li>
 							)
 						})}
