@@ -28,7 +28,7 @@ const CustomersPage = (props: Props) => {
 										<div className="bg-slate-200 dark:bg-slate-600 p-3 rounded-lg">
 											<BsPersonFill className='text-slate-700 dark:text-slate-400' />
 										</div>
-										<p className='px-2 text-sm font-semibold'>{order.name.first} {order.name.last}</p>
+										<p className='pl-4 text-sm font-semibold'>{order.name.first} {order.name.last}</p>
 									</div>
 								</li>
 							)
