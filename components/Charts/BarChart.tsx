@@ -40,7 +40,7 @@ const BarChart = (props: Props) => {
 		}
 	}
 	return (
-		<div className='w-full lg:w-[60vw] border rounded-lg bg-white h-full dark:bg-slate-900 p-5'>
+		<div className='lg:w-full w-[70vw] border rounded-lg bg-white h-[40vh] dark:bg-slate-900 p-5 flex items-center justify-center'>
 			<Bar data={chartData!} options={options} />
 		</div>
 	)
