@@ -6,7 +6,7 @@ type Props = {}
 
 const RecentOrders = (props: Props) => {
 	return (
-		<div className='lg:w-[28vw] w-full bg-white dark:bg-slate-900 p-5 rounded-lg shadow-sm overflow-scroll h-[60vh] scrollbar-hide'>
+		<div className='w-[80vw] lg:w-full bg-white dark:bg-slate-900 p-5 rounded-lg shadow-sm overflow-scroll h-[60vh] scrollbar-hide'>
 			<h1 className='text-center uppercase font-semibold'>
 				Recent Orders
 			</h1>
