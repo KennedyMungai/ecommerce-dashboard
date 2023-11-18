@@ -5,7 +5,7 @@ type Props = {}
 
 const TopCards = (props: Props) => {
 	return (
-		<div className='flex flex-col gap-5 px-5 p-2 w-full lg:flex-row'>
+		<div className='flex flex-col items-center justify-center gap-5 px-5 p-2 lg:w-full lg:flex-row w-[35rem]'>
 			<Card className='flex justify-between w-full p-2'>
 				<CardContent className='flex justify-between w-full'>
 					<div className='flex flex-col w-full'>
