@@ -20,6 +20,19 @@ const CustomersPage = (props: Props) => {
 						<span className='font-semibold hidden lg:display-flex'>Method</span>
 						<span className='hidden lg:flex'></span>
 					</div>
+					<ul className='list-none'>
+						{data.map((order, id) => {
+							return (
+								<li key={id} className='bg-slate-100 hover:bg-slate-100/50 rounded-lg my-3 p-2 flex justify-between items-center cursor-pointer'>
+									<div className="">
+										<div className="">
+											<BsPersonFill className='text-slate-700 dark:text-slate-400' />
+										</div>
+									</div>
+								</li>
+							)
+						})}
+					</ul>
 				</div>
 			</div>
 		</div>
